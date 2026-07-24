@@ -1,0 +1,55 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/[0.06]">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between md:grid md:grid-cols-[auto_1fr_auto]">
+    <a href="/" class="flex items-center font-bold text-lg text-white tracking-tight">
+      <img src="/loggo.svg" alt="WolfCanvas" width="119" height="65" class="h-[65px] w-auto" />
+      <span class="-ml-10">WolfCanvas</span>
+    </a>
+
+    <div class="hidden md:flex items-center justify-center gap-8">
+      <a href="/process" class={`nav-link text-sm font-semibold ${currentPath === '/process' ? 'text-accent-indigo active' : 'text-white/50 hover:text-white'}`}>Process</a>
+      <a href="/work" class={`nav-link text-sm font-semibold ${currentPath === '/work' ? 'text-accent-indigo active' : 'text-white/50 hover:text-white'}`}>Work</a>
+      <a href="/apply#contact" class={`nav-link text-sm font-semibold ${currentPath === '/apply' ? 'text-accent-indigo active' : 'text-white/50 hover:text-white'}`}>Contact</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="/apply" class="btn-primary hidden md:inline-flex items-center gap-2 px-[22px] py-[10px] bg-accent-indigo text-white text-sm font-semibold rounded-lg">
+        Apply
+      </a>
+      <button id="menu-toggle" class="md:hidden p-2 text-white" aria-label="Toggle menu">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-300 border-b border-transparent">
+    <div class="px-6 py-4 space-y-3 bg-slate-900">
+      <a href="/process" class="block text-sm font-medium text-white/50 hover:text-white">Process</a>
+      <a href="/work" class="block text-sm font-medium text-white/50 hover:text-white">Work</a>
+      <a href="/apply#contact" class="block text-sm font-medium text-white/50 hover:text-white">Contact</a>
+      <a href="/apply" class="block w-full text-center px-5 py-2.5 bg-accent-indigo text-white text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity">Apply</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  let isOpen = false;
+
+  toggle?.addEventListener('click', () => {
+    isOpen = !isOpen;
+    if (isOpen) {
+      menu?.style.setProperty('max-height', '300px');
+      menu?.style.setProperty('border-bottom-color', 'rgba(255,255,255,0.08)');
+    } else {
+      menu?.style.setProperty('max-height', '0');
+      menu?.style.setProperty('border-bottom-color', 'transparent');
+    }
+  });
+</script>

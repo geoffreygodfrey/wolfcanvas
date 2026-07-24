@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy — WolfCanvas">
+  <Navbar />
+  <main class="pt-24 pb-24 px-6">
+    <div class="max-w-2xl mx-auto">
+      <h1 class="font-headline font-bold text-4xl tracking-tight text-white mb-8">Privacy Policy</h1>
+      <p class="text-sm text-white/40 mb-6">Last updated: July 2026</p>
+
+      <div class="prose prose-gray max-w-none space-y-8">
+        <section>
+          <h2 class="font-headline font-semibold text-xl text-white mb-3">Information We Collect</h2>
+          <p class="text-white/50 leading-relaxed">
+            When you submit a form on our website, we collect your name, email address, company name, city, website URL, and any additional information you provide. We also collect standard analytics data (page views, referral source, device type) through our hosting provider.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-headline font-semibold text-xl text-white mb-3">How We Use Your Information</h2>
+          <p class="text-white/50 leading-relaxed">
+            We use your information to respond to your enquiry, evaluate project fit, and deliver our services. We do not sell, rent, or share your personal information with third parties for marketing purposes.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-headline font-semibold text-xl text-white mb-3">Data Storage</h2>
+          <p class="text-white/50 leading-relaxed">
+            Form submissions are stored in Google Sheets and processed through serverless functions hosted on Netlify. Analytics data is processed by our hosting provider. We retain form data for up to 12 months.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-headline font-semibold text-xl text-white mb-3">Cookies</h2>
+          <p class="text-white/50 leading-relaxed">
+            Our website uses essential cookies for functionality. We may use Meta Pixel and Google Analytics for advertising and analytics purposes. You can opt out through your browser settings.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-headline font-semibold text-xl text-white mb-3">Your Rights</h2>
+          <p class="text-white/50 leading-relaxed">
+            You can request access to, correction of, or deletion of your personal data by contacting us at support@wolfcanvas.com. We will respond within 30 days.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-headline font-semibold text-xl text-white mb-3">Contact</h2>
+          <p class="text-white/50 leading-relaxed">
+            For privacy-related questions, contact us at support@wolfcanvas.com.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

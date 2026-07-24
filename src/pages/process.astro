@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Process — WolfCanvas">
+  <Navbar />
+  <main>
+    <!-- Hero -->
+    <section class="relative pt-40 md:pt-44 pb-24 px-6 overflow-hidden" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #0F172A 100%);">
+      <!-- Noise removed for mobile performance -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[700px] bg-accent-indigo/10 rounded-full blur-[140px] pointer-events-none"></div>
+      <div class="absolute bottom-0 right-1/4 w-[500px] h-[400px] bg-accent-cyan/8 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="max-w-6xl mx-auto relative z-10">
+        <div class="mb-16">
+          <h1 class="font-headline font-bold text-4xl md:text-5xl tracking-tight text-white mb-4">How we work</h1>
+          <p class="text-white/50 text-lg max-w-xl">
+            A straightforward process designed for busy brokerage owners who want results, not meetings.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="p-8 rounded-2xl border border-white/10 bg-white/[0.04]">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/[0.08] text-white/50 text-lg font-bold">01</span>
+              <div>
+                <h3 class="font-headline font-bold text-xl text-white">Apply</h3>
+                <span class="text-xs text-white/40">Day 1</span>
+              </div>
+            </div>
+            <p class="text-white/50 leading-relaxed mb-4">
+              Fill out a short application form. We ask about your brokerage, your current website, your traffic sources, and what's not working. No 40-page questionnaire — just the essentials.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-white/40 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                Takes 5 minutes
+              </li>
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-white/40 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                We review within 24 hours
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-white/10 bg-white/[0.04]">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/[0.08] text-white/50 text-lg font-bold">02</span>
+              <div>
+                <h3 class="font-headline font-bold text-xl text-white">Qualify</h3>
+                <span class="text-xs text-white/40">Day 2–3</span>
+              </div>
+            </div>
+            <p class="text-white/50 leading-relaxed mb-4">
+              We jump on a 15-minute call. No pitch deck. We discuss your goals, look at your current site, and tell you honestly whether we can help. If we're not a fit, we'll say so.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-white/40 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                15 minutes max
+              </li>
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-white/40 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                Honest feedback, always
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-white/10 bg-white/[0.04]">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/[0.08] text-white/50 text-lg font-bold">03</span>
+              <div>
+                <h3 class="font-headline font-bold text-xl text-white">Build</h3>
+                <span class="text-xs text-white/40">Day 4–6</span>
+              </div>
+            </div>
+            <p class="text-white/50 leading-relaxed mb-4">
+              We design and develop your pages. Every decision is driven by conversion data — not trends, not personal taste. Forms, tracking, and WhatsApp routing are built in from the start.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-white/40 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                Conversion-first design
+              </li>
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-white/40 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                Mobile-tested before launch
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-8 rounded-2xl border border-white/10 bg-white/[0.04]">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent-cyan/20 text-accent-cyan text-lg font-bold">04</span>
+              <div>
+                <h3 class="font-headline font-bold text-xl text-white">Launch</h3>
+                <span class="text-xs text-white/40">Day 7</span>
+              </div>
+            </div>
+            <p class="text-white/50 leading-relaxed mb-4">
+              We deploy your site, install Meta Pixel and analytics, run a full mobile test, and record a walkthrough video so your team knows exactly how everything works.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-accent-cyan mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                Live in production
+              </li>
+              <li class="flex items-start gap-2 text-sm text-white/50">
+                <svg class="w-4 h-4 text-accent-cyan mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                Full tracking installed
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 reveal">
+          <a href="https://cal.com/wolfcanvas/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3.5 bg-accent-indigo text-white font-semibold rounded-lg hover:bg-accent-indigo/90 transition-colors">
+            Book a call
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+          <a href="/work" class="inline-flex items-center gap-2 px-7 py-3.5 bg-white/5 text-white font-semibold rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
+            View work
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
